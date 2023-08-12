@@ -1,0 +1,176 @@
+:root{
+    --backgorund-color-darkmode: #121212;
+    --display-color-darkmode: #242424;
+    --button-color-darkmode: #2e2e2e; 
+    --button-hover-color-darkmode: #202020;
+    --text-color-darkmode: #f0f8ff;
+
+    --background-color-lightmode: #ffffff;
+    --display-color-lightmode: #f5f5f5;
+    --button-color-lightmode: #e0e0e0;
+    --button-hover-color-lightmode: #f0f0f0;
+    --text-color-lightmode: #222121;
+}
+
+/* remove the arrows in a number input field in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* remove the arrows in a number input field in Firefox */
+input[type=number]{
+    -moz-appearance:textfield;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    background-color: var(--backgorund-color-darkmode);
+    color: var(--text-color-darkmode);
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    
+}
+h3 {
+    margin: auto;
+    font-size: 3rem;
+    text-align: center;
+    width: 40.5rem;
+    background-color: var(--display-color-darkmode);
+}
+
+.dark-theme-button {
+    background-color: var(--button-color-darkmode);
+    color: var(--text-color-darkmode);
+}
+
+.light-theme{
+    background-color: var(--background-color-lightmode);
+    color: var(--text-color-lightmode);
+}
+
+.light-theme-button{
+    background-color: var(--button-color-lightmode);
+}
+
+.container {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap !important;
+    
+}
+.dark-display{
+    background-color: var(--display-color-darkmode);
+}
+.light-display{
+    background-color: var(--display-color-lightmode);
+}
+
+.display{
+    width: 40.2rem;
+    height: 5rem;
+    font-size: 4rem;
+    border: none !important;
+    
+    
+}
+.button-field-light-theme{
+    border: var(--display-color-lightmode) 4px solid;
+}
+.button-field-dark-theme{
+    border: var(--display-color-darkmode) 4px solid;
+}
+
+.button-field{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+    
+    
+}
+
+.button {
+    flex-grow: 0;
+    margin: 2px;
+    font-size: 50px;
+    border-radius: 0px;
+    border: none !important;
+    width: 9.75rem;
+    height: 6rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    
+}
+.dark-theme-button:hover{
+    background-color: var(--button-hover-color-darkmode);
+}
+
+.light-theme-button:hover{
+    background-color: var(--button-hover-color-lightmode);
+}
+
+.equals{
+    background-color: rgb(156, 36, 36);
+}
+
+.equals:hover {
+    cursor: pointer;
+    background-color: rgb(201, 65, 65);
+}
+
+.special{
+    background-color: var(--button-hover-color-darkmode);
+}
+.light-theme-button-special{
+    background-color: var(--button-color-lightmode);
+}
+.light-theme-button-special:hover{
+    background-color: var(--button-hover-color-lightmode);
+}
+.special:hover{
+    background-color: var(--button-color-darkmode);
+}
+.light-theme-button-other:hover{
+    background-color: var(--button-color-lightmode);
+}
+.other:hover{
+    background-color: var(--button-hover-color-darkmode);
+}
+
+.light{
+    border-radius: 80px;
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    border: none;
+    background-color: #6d6d6d00;
+}
+
+.history{
+    border-radius: 80px;
+    font-size: 1em;
+    width: 2.5em;
+    height: 1.5em;
+    border: none;
+    color: #e0e0e0;
+    background-color: #6d6d6d93;
+}
+
+.hidden{
+    display: none;
+}
+
+.pressed{
+    background-color: blue;
+}
