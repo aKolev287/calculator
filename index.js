@@ -273,7 +273,6 @@ function main(){
     for(let i = 0; i < button.length; i++){
         button[i].addEventListener('click', function(){
             handleButtonClick(this.innerHTML);
-            downButton(this.innerHTML);
         });
     }
     handleKeyboardEvent();
